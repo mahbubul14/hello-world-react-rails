@@ -23,7 +23,7 @@ export const fetchGreetingData = () => async (dispatch) => {
   try {
     const res = await fetch('/api/v1/greetings.json');
     if (res.ok) {
-      let greetings = await res.json();
+      const greetings = await res.json();
       dispatch(fetchGreetingSucc(greetings));
     }
   } catch (err) {

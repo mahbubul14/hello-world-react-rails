@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.3"
 
+gem 'rubocop', '>= 1.0', '< 2.0'
+
 # Webpack and React
 gem "webpacker"
 gem "react-rails"

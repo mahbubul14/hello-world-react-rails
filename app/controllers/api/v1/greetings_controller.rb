@@ -4,5 +4,5 @@ class Api::V1::GreetingsController < ApplicationController
     # render json: @greetings, status: :ok
 
     render json: @greetings.sample, status: :ok
-    end
+  end
 end
